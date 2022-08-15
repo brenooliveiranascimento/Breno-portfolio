@@ -6,17 +6,12 @@ interface props {
 
 function Main({children}: props) {
   return (
-    <>
-      <header>
-        <h1>Meu Portfolio</h1>
-      </header>
-      <main>
+    <div>
         {children}
-      </main>
       <footer>
         <h1>footer do portfolio</h1>
       </footer>
-    </>
+    </div>
   )
 }
 

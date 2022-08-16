@@ -18,8 +18,8 @@ function Header() {
         <Link href={"/"}>
           <span>Sobre</span>
         </Link>
-
       </nav>
+      <div className={style.bottom_divisor} />
 
     </header>
   )

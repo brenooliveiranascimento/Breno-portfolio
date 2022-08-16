@@ -20,6 +20,10 @@
 
 .text_container {
   flex-direction: column;
+  padding: 20px;
+  border-left:white solid 1px ;
+  border-bottom:white solid 1px ;
+  border-bottom-left-radius: 5px;
   h2 {
     font-size: 2.5rem;
     text-align: start;

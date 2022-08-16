@@ -6,3 +6,28 @@
   align-items: center;
   justify-content: center;
 }
+
+.me_and_itachi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.black_back {
+  width: 300px;
+  height: 400px;
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  margin-top: 5rem;
+  margin-right: 5rem;
+}
+
+.eu_image {
+  z-index: 10;
+  align-self: flex-start;
+  position: absolute;
+  filter: brightness(85%);
+}

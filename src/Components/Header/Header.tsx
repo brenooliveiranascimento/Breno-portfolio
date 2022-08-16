@@ -4,10 +4,10 @@ import style from './Header.module.scss'
 
 function Header() {
   const [scrollY, setScrollY] = useState(0);
-  const verifyY: any = setInterval(() => setScrollY(window.scrollY),100)
-
+  const verifyY: any = () => setInterval(() => setScrollY(window.scrollY),100)
   useEffect(() => {
-    return () => clearInterval(verifyY)
+    verifyY()
+    return () => clearInterval()
   }, [])
 
   return (

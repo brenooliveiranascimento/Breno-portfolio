@@ -7,6 +7,7 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 import MeAndItachi from './Me_And_Itachi';
 import ItachiMessage from './ItachiMessage';
 import MeMessage from './MeMessage';
+import Ghost from './ghost';
 
 function About() {
   const [showMeOrItachi, setShow] = useState('me');
@@ -36,10 +37,7 @@ function About() {
             }
           </h1>
           ) : (
-            <section style={{
-              width: 600,
-              height: 260,
-            }}/>
+            <Ghost />
           )
         }
 

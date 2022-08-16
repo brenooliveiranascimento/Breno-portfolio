@@ -53,6 +53,12 @@
   }
 }
 
+.hiden_area {
+  width: 300px;
+  height: 330px;
+  margin-left: 200px;
+}
+
 .black_back {
   width: 400px;
   height: 500px;
@@ -78,13 +84,17 @@
 }
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .about_container {
     flex-direction: column;
     height: 110vh;
     button {
       margin-bottom: 2rem;
     }
+  }
+  .hiden_area {
+    margin-left: 0px;
+    width: 300;
   }
   .me_and_itachi {
     margin-top: 2rem;

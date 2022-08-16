@@ -41,10 +41,10 @@
 }
 
 .stack_card {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px solid white;
-  margin: 1rem;
+  margin: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,14 +56,14 @@
   h1 {
     z-index: 50;
     transition: all 0.2s;
-    font-size: 26px;
+    font-size: 18px;
     text-align: center;
   }
 }
 
 .hidden_stackCard_white {
-  width: 200px;
-  height: 200;
+  width: 150px;
+  height: 150px;
   display: flex;
   background-color: white;
   position: absolute;
@@ -75,6 +75,12 @@
   color: black;
 
   h1 {
-    font-size: 33px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stack_dark {
+    padding: 10px;
   }
 }

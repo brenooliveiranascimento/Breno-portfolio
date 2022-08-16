@@ -13,7 +13,7 @@ function Header() {
   return (
     <header
       style={{
-        backgroundColor: scrollY > 150 ? 'rgba(0,0,0,0.8)' : 'rgba(0,0,0,0.0)',
+        backgroundColor: scrollY > 150 ? 'rgba(0,0,0,0.9)' : 'rgba(0,0,0,0.0)',
         padding: scrollY > 150 ? '10px' : '20px' ,
       }}
       className={style.header_container}

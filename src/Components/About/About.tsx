@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './About.module.scss';
 import Eu from '../../images/eu.jpg'
 import Itachi from '../../images/Itachi.jpg'
@@ -10,6 +10,13 @@ import MeMessage from './MeMessage';
 
 function About() {
   const [showMeOrItachi, setShow] = useState('me');
+  const [scrollY, setScrollY] = useState(0);
+  const verifyY: any = () => setInterval(() => setScrollY(window.scrollY),100)
+  useEffect(() => {
+    verifyY()
+    return () => clearInterval()
+  }, [])
+
   return (
     <section id="About" className={style.about_container}>
         <MeAndItachi
@@ -17,15 +24,24 @@ function About() {
             changeImage={(img: string) => setShow(img)}
           />
       <section className={style.about_inf_area}>
-        <h1 data-aos="fade-up-left">
-          {
-            showMeOrItachi === 'me' ? (
-              <MeMessage />
-            ) : (
-              <ItachiMessage />
-            )
-          }
-        </h1>
+        {
+          scrollY > 300 ? (
+            <h1>
+            {
+              showMeOrItachi === 'me' ? (
+                <MeMessage />
+              ) : (
+                <ItachiMessage />
+              )
+            }
+          </h1>
+          ) : (
+            <section style={{
+              width: 600,
+            }}/>
+          )
+        }
+
       </section>
     </section>
   );

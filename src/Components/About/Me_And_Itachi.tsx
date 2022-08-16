@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './About.module.scss';
 import Itachi from '../../images/Itachi.jpg'
 import FadeIn from 'react-fade-in/lib/FadeIn';
@@ -11,9 +11,24 @@ interface meAndItachiProps {
 }
 
 function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
+  const [widthvalue,setWidthvalue] = useState(0);
+  const verifyWidth = () => setInterval(() =>setWidthvalue(window.innerWidth), 100)
+
+  const widhtOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 320 : 300) : (showMeOrItachi === 'me' ? 420 : 400)
+  const heighthOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 420 : 400) : (showMeOrItachi === 'me' ? 520 : 500)
+
+  useEffect(() => {
+    verifyWidth();
+    return () => clearInterval(verifyWidth())
+  }, [])
 
   return (
-    <section data-aos="flip-left" className={style.me_and_itachi}>
+    <section
+      style={{
+        width: widhtOfImages
+      }}  
+      className={style.me_and_itachi}
+    >
     <Image
       onMouseOver={() => showMeOrItachi === 'me' && changeImage('itachi') }
       // onClick={() => changeImage('itachi')}
@@ -22,14 +37,14 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
         filter: showMeOrItachi === 'me' ? 'brightness(85%)' : 'brightness(10%)',
       }}
       className={style.eu_image}
-      width={showMeOrItachi === 'me' ? 420 : 400}
-      height={showMeOrItachi === 'me' ? 520 : 500}
+      width={widhtOfImages}
+      height={heighthOfImages}
       src={Eu}
       />
     <article
       style={{
-        width: showMeOrItachi === 'itachi' ? 420 : 400,
-        height: showMeOrItachi === 'itachi' ? 520 : 500,
+        width: widhtOfImages,
+        height: heighthOfImages,
       }}
     className={style.black_back}>
       <Image
@@ -40,8 +55,8 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
         filter: showMeOrItachi === 'itachi' ? 'brightness(60%)' : 'brightness(30%)',
       }}
         className={style.itachi}
-        width={showMeOrItachi === 'itachi' ? 420 : 400}
-        height={showMeOrItachi === 'itachi' ? 520 : 500}
+        width={widhtOfImages}
+        height={heighthOfImages}
         src={Itachi}
         />
       </article>

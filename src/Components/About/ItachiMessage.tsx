@@ -1,8 +1,9 @@
 import React from 'react';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 function ItachiMessage() {
   return (
-    <main>
+    <FadeIn>
       <h1>
         E esse é meu doguinho, Itachi!
         Ele não é lindo?
@@ -16,7 +17,7 @@ function ItachiMessage() {
       <p>
         - Meu eterno companheiro
       </p>
-    </main>
+    </FadeIn>
   )
 }
 

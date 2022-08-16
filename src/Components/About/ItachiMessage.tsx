@@ -11,7 +11,10 @@ function ItachiMessage() {
         - Um doguinho muito gente fina!!
       </p>
       <p>
-        - Come mais do que a boca
+        - Adora fazer careta
+      </p>
+      <p>
+        - Meu eterno companheiro
       </p>
     </main>
   )

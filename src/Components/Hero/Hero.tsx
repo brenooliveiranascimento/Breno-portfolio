@@ -4,7 +4,10 @@ import style from './hero.module.scss'
 function Hero() {
   return (
     <section className={style.heroContainer}>
-      <h1>Hero!!</h1>
+      <section className={style.hero_darkness}>
+        <h1>Hero!!</h1>
+        <span>aaa</span>
+      </section>
     </section>
   )
 }

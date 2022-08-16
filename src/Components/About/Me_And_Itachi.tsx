@@ -31,6 +31,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
     >
     <Image
       onMouseOver={() => showMeOrItachi === 'me' && changeImage('itachi') }
+      alt="me"
       // onClick={() => changeImage('itachi')}
       style={{
         zIndex: showMeOrItachi === 'me' ? 10 : 0,
@@ -49,6 +50,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
     className={style.black_back}>
       <Image
       onMouseOut={() => showMeOrItachi === 'itachi' && changeImage('me')}
+      alt="Itachi"
       // onClick={() => changeImage('me')}
       style={{
         zIndex: showMeOrItachi === 'itachi' ? 10 : 0,

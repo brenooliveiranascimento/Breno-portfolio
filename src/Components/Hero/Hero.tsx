@@ -11,7 +11,7 @@ function Hero() {
             Olá me chamo Breno e sou desenvolvedor
           </h2>
           <TypeAnimation
-            sequence={['FrontEnd', 3000, 'Mobile', 3000]}
+            sequence={['Front-End', 3000, 'Mobile', 3000]}
             style={{ fontSize: '2.8em' }}
             wrapper="h1"
             repeat={Infinity}

@@ -16,7 +16,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
     <section data-aos="flip-left" className={style.me_and_itachi}>
     <Image
       onMouseOver={() => showMeOrItachi === 'me' && changeImage('itachi') }
-      // onClick={() => changeImage('itahi')}
+      // onClick={() => changeImage('itachi')}
       style={{
         zIndex: showMeOrItachi === 'me' ? 10 : 0,
         filter: showMeOrItachi === 'me' ? 'brightness(85%)' : 'brightness(10%)',
@@ -46,7 +46,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
         />
       </article>
 </section>
-  )
-}
+  );
+};
 
 export default MeAndItachi;

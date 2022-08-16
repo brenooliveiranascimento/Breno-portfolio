@@ -19,7 +19,7 @@ function MeMessage() {
         Recomendar Série/Anime/Filme
       </button>
     </main>
-  )
-}
+  );
+};
 
 export default MeMessage;

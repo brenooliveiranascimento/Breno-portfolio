@@ -29,7 +29,7 @@ function Header() {
         marginTop: scrollY > 150 ? '0rem' : '1rem',
       }}
       >
-        <Link href={"/"}>
+        <Link href={"/#Home"}>
           <span
             style={{
               marginTop: scrollY > 150 ? '1rem' : '1.4rem',
@@ -37,7 +37,7 @@ function Header() {
           >Home</span>
         </Link>
         <div className={style.divisor} />
-        <Link href={"/"}>
+        <Link href={"/#Projetos"}>
           <span
             style={{
               marginTop: scrollY > 150 ? '1rem' : '1.4rem',
@@ -45,7 +45,7 @@ function Header() {
           >Projetos</span>
         </Link>
         <div className={style.divisor} />
-        <Link href={"/"}>
+        <Link href={"/#About"}>
           <span
             style={{
               marginTop: scrollY > 150 ? '1rem' : '1.4rem',

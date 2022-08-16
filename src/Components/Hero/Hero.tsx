@@ -7,7 +7,7 @@ import Header from '../Header/Header';
 
 function Hero() {
   return (
-    <section className={style.heroContainer}>
+    <section id="Home" className={style.heroContainer}>
       <section className={style.hero_darkness}>
         <Header />
         <section className={style.centralize_content}>

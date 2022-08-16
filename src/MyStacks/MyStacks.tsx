@@ -35,6 +35,7 @@ function MyStacks() {
               {
                 myStacks.map((stack, index) => (
                   <section
+                    key={stack.name}
                     onMouseLeave={() => setSelectStack('')}
                     onMouseOver={() => setSelectStack(stack.name)}
                   >
@@ -42,7 +43,6 @@ function MyStacks() {
                       index={index}
                       selectStack={selectStack}
                       stack={stack}
-                      key={stack.name}
                     />
                   </section>
                 ))

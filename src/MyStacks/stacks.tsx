@@ -6,6 +6,7 @@ function Stacks({stack, selectStack, index}:any) {
   const isPar = index % 2
   return (
     <section
+      data-aos={ isPar ? "fade-up" : "fade-left" }
       style={{
         marginTop: isPar ? 40 : 0
       }}

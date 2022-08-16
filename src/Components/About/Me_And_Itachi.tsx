@@ -16,6 +16,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
     <section data-aos="flip-left" className={style.me_and_itachi}>
     <Image
       onMouseOver={() => showMeOrItachi === 'me' && changeImage('itachi') }
+      // onClick={() => changeImage('itahi')}
       style={{
         zIndex: showMeOrItachi === 'me' ? 10 : 0,
         filter: showMeOrItachi === 'me' ? 'brightness(85%)' : 'brightness(10%)',
@@ -33,6 +34,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
     className={style.black_back}>
       <Image
       onMouseOut={() => showMeOrItachi === 'itachi' && changeImage('me')}
+      // onClick={() => changeImage('me')}
       style={{
         zIndex: showMeOrItachi === 'itachi' ? 10 : 0,
         filter: showMeOrItachi === 'itachi' ? 'brightness(60%)' : 'brightness(30%)',

@@ -17,9 +17,9 @@ function Hero() {
             </h2>
             <TypeAnimation
               sequence={['FrontEnd Mobile.', 1300,]}
-                            //  Continuing previous Text
               style={{ fontSize: '3em' }}
               wrapper="h1"
+              speed={10}
             />
           </article>
         </section>

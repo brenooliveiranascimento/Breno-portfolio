@@ -1,8 +1,9 @@
 import React from 'react';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 function MeMessage() {
   return (
-    <main>
+    <FadeIn>
       <h1>
         Prazer, esse sou eu!
       </h1>
@@ -18,7 +19,7 @@ function MeMessage() {
       <button>
         Recomendar Série/Anime/Filme
       </button>
-    </main>
+    </FadeIn>
   );
 };
 

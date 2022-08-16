@@ -38,6 +38,7 @@ function About() {
           ) : (
             <section style={{
               width: 600,
+              height: 260,
             }}/>
           )
         }

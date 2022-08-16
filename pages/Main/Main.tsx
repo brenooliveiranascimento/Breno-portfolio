@@ -8,9 +8,6 @@ function Main({children}: props) {
   return (
     <div className={style.main_coontainer}>
         {children}
-      <footer>
-        <h1>footer do portfolio</h1>
-      </footer>
     </div>
   )
 }

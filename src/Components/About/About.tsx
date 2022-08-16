@@ -12,7 +12,6 @@ function About() {
   const [showMeOrItachi, setShow] = useState('me');
   return (
     <section id="About" className={style.about_container}>
-
         <MeAndItachi
             showMeOrItachi={showMeOrItachi}
             changeImage={(img: string) => setShow(img)}

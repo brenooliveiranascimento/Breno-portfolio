@@ -13,8 +13,11 @@ function MeMessage() {
       - Completamente apaixonado por astronomia
       </p>
       <p>
-      - Adoro animes e filmes, a proposito, recomende alguma coisa pra assistir.
+      - Adoro animes séries e filmes, a proposito, me recomende alguma coisa pra assistir.
       </p>
+      <button>
+        Recomendar Série/Anime/Filme
+      </button>
     </main>
   )
 }

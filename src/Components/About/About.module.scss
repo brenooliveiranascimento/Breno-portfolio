@@ -5,6 +5,23 @@
   height: 70vh;
   align-items: center;
   justify-content: center;
+  margin-top: -7rem;
+  button {
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #F82C4D;
+    border:none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+  }
+
+  button:hover {
+    filter: brightness(70%);
+  }
 }
 
 .me_and_itachi {
@@ -65,9 +82,16 @@
     flex-direction: column;
   }
   .me_and_itachi {
-    margin-top: 3rem;
+    margin-top: 15rem;
   }
   .about_inf_area {
-    margin-top: 2rem;
+    margin-top: 5rem;
+
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 }

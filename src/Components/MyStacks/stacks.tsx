@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { stackTypes } from '../../types/stackstypes';
 import style from './Project.module.scss'
 
 function Stacks({stack, selectStack, index}:any) {

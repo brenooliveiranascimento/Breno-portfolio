@@ -31,6 +31,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.1s;
+  margin-left: 5rem;
 }
 
 .about_inf_area {
@@ -87,7 +88,7 @@
 @media screen and (max-width: 900px) {
   .about_container {
     flex-direction: column;
-    height: 110vh;
+    height: 80vh;
     button {
       margin-bottom: 2rem;
     }
@@ -95,9 +96,11 @@
   .hiden_area {
     margin-left: 0px;
     width: 300;
+    height: 390px;
   }
   .me_and_itachi {
-    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-top: 10rem;
   }
   .about_inf_area {
     margin-top: 5rem;

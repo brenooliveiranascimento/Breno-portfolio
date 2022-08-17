@@ -2,23 +2,26 @@ import React, { useState } from 'react';
 import { stackTypes } from '../../types/stackstypes';
 import style from './Project.module.scss';
 import Stacks from './stacks';
+import ReactWhite from '../images/reactWhite.png'
+import ReactBlack from '../images/reactBlack.png'
+import Image from 'next/image';
 
 function MyStacks() {
   const [myStacks, setMyStacks] = useState<Array<stackTypes>>([
-    {name: 'TypeScript', photo: '', description: ''},
-    {name: 'JavaScript', photo: '', description: ''},
-    {name: 'Redux', photo: '', description: ''},
-    {name: 'React', photo: '', description: ''},
-    {name: 'Next', photo: '', description: ''},
-    {name: 'RTL', photo: '', description: ''},
-    {name: 'Jest', photo: '', description: ''},
-    {name: 'FireBase', photo: '', description: ''},
-    {name: 'Sass', photo: '', description: ''},
-    {name: 'Styled Components', photo: '', description: ''},
-    {name: 'HTML', photo: '', description: ''},
-    {name: 'Css', photo: '', description: ''},
+    {name: 'TypeScript', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'JavaScript', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Redux', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'ReactJs', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Next', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'RTL', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Jest', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'FireBase', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Sass', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Styled Components', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'HTML', photo: '', description: '', white: ReactWhite, black: ReactBlack},
+    {name: 'Css', photo: '', description: '', white: ReactWhite, black: ReactBlack},
   ])
-  const [selectStack, setSelectStack] = useState('Css');
+  const [selectStack, setSelectStack] = useState('');
   return (
     <main className={style.stack_container}>
       <section className={style.stack_dark}>
@@ -47,7 +50,7 @@ function MyStacks() {
                   </section>
                 ))
               }
-          </section>
+         </section>
         </section>
       </section>
     </main>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { stackTypes } from '../../types/stackstypes';
 import style from './Project.module.scss'
@@ -8,7 +9,7 @@ function Stacks({stack, selectStack, index}:any) {
     <section
       data-aos={ isPar ? "fade-up" : "fade-left" }
       style={{
-        marginTop: isPar ? 40 : 0
+        marginTop: 343 && isPar ? 30 : 0,
       }}
       className={style.stack_card}
     >
@@ -17,7 +18,8 @@ function Stacks({stack, selectStack, index}:any) {
         </h1>
       <section
         style={{
-          height: selectStack === stack.name ? 150 : 0,
+          height: selectStack === stack.name ? 180 : 0,
+          zIndex:10
         }}
         className={style.hidden_stackCard_white}
       />

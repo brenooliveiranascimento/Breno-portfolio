@@ -27,7 +27,11 @@ function About() {
       <section className={style.about_inf_area}>
         {
           scrollY > 300 ? (
-            <h1>
+            <section
+              style={{
+                height: 390,
+              }}
+            >
             {
               showMeOrItachi === 'me' ? (
                 <MeMessage />
@@ -35,7 +39,7 @@ function About() {
                 <ItachiMessage />
               )
             }
-          </h1>
+          </section>
           ) : (
             <Ghost />
           )

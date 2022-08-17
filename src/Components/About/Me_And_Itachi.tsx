@@ -14,8 +14,8 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
   const [widthvalue,setWidthvalue] = useState(0);
   const verifyWidth = () => setInterval(() =>setWidthvalue(window.innerWidth), 100)
 
-  const widhtOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 320 : 300) : (showMeOrItachi === 'me' ? 420 : 400)
-  const heighthOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 420 : 400) : (showMeOrItachi === 'me' ? 520 : 500)
+  const widhtOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 260 : 240) : (showMeOrItachi === 'me' ? 420 : 400)
+  const heighthOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 300 : 290) : (showMeOrItachi === 'me' ? 520 : 500)
 
   useEffect(() => {
     verifyWidth();
@@ -25,9 +25,14 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
   return (
     <section
       style={{
-        width: widhtOfImages
       }}  
       className={style.me_and_itachi}
+    >
+  <article
+      style={{
+        width: widhtOfImages,
+        height: heighthOfImages,
+      }}
     >
     <Image
       onMouseOver={() => showMeOrItachi === 'me' && changeImage('itachi') }
@@ -42,6 +47,8 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
       height={heighthOfImages}
       src={Eu}
       />
+    </article>
+
     <article
       style={{
         width: widhtOfImages,

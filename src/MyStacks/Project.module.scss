@@ -1,0 +1,101 @@
+.stack_container {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  background: url("../images/background1.jpg") center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  z-index: 50;
+}
+
+.stack_dark {
+  width: 100%;
+  padding: 40px;
+  height: auto;
+  z-index: 51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.stacks_centralize {
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stacks_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.stack_card {
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  margin: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-flexStart;
+  transition: all 0.2s;
+  color: white;
+  cursor: pointer;
+
+  h1 {
+    z-index: 50;
+    transition: all 0.2s;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.hidden_stackCard_white {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.stack_card:hover {
+  color: black;
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stack_dark {
+    padding: 10px;
+  }
+}
+
+// @media screen and (max-width: 400px) {
+//   .hidden_stackCard_white {
+//     width: 100px;
+//     height: 100px;
+//   }
+//   .stack_card {
+//     width: 100px;
+//     height: 100px;
+
+//     h1 {
+//       font-size: 20px;
+//     }
+//   }
+// }

@@ -4,16 +4,18 @@ import Aos from 'aos'
 import Hero from '../src/Components/Hero/Hero'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
+import MyStacks from '../src/MyStacks/MyStacks'
 
 const Home: NextPage = () => {
   useEffect(() => {
     Aos.init()
   }, [])
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Hero />
       <About />
-    </div>
+      <MyStacks />
+    </main>
   )
 }
 

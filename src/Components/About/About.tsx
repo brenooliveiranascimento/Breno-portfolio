@@ -28,6 +28,7 @@ function About() {
         {
           scrollY > 300 ? (
             <section
+              className={style.me_and_itachi_message_area}
               style={{
                 height: 390,
               }}

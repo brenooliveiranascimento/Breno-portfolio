@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './SocialMedia.module.scss';
-import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram, FiMail } from "react-icons/fi";
 
 function SocialMedia() {
   return (
@@ -24,6 +24,14 @@ function SocialMedia() {
 
         <a>
           <FiInstagram
+            className={style.media_icon}
+            color='white'
+            size={30}
+          />
+        </a>
+
+        <a>
+          <FiMail
             className={style.media_icon}
             color='white'
             size={30}

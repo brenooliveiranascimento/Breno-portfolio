@@ -28,7 +28,7 @@ const allProjects: any = {
       DrawingWeb2,
     ],
     description: '',
-    gitHub: '',
+    gitHub: 'https://github.com/brenooliveiranascimento/Drawing-Station-Web',
     goProject:''
   },
   reduxWallet: {
@@ -38,7 +38,7 @@ const allProjects: any = {
       ReduxWallet1,
       ReduxWallet2,
     ],
-    description: '',
+    description: 'https://github.com/brenooliveiranascimento/Redux-wallet-Redux-thunk',
     gitHub: '',
     goProject:''
   },
@@ -51,21 +51,21 @@ const allProjects: any = {
       DrawingApp1,
     ],
     description: '',
-    gitHub: '',
+    gitHub: 'https://github.com/brenooliveiranascimento/Drawing-Station-Android-Old',
     goProject:''
   },
-  Board: {
-    name: 'Board',
-    tecnologias: ['React', 'NextJs', 'Api'],
-    images: [
-      Board1,
-      Board2,
-      Board3,
-    ],
-    description: '',
-    gitHub: '',
-    goProject:''
-  },
+  // Board: {
+  //   name: 'Board',
+  //   tecnologias: ['React', 'NextJs', 'Api'],
+  //   images: [
+  //     Board1,
+  //     Board2,
+  //     Board3,
+  //   ],
+  //   description: '',
+  //   gitHub: '',
+  //   goProject:''
+  // },
 }
 
 const images = [
@@ -120,10 +120,10 @@ const ItemCard = ({photos}: any) => {
     style={{
       width: 800
     }}
-    autoplay={{
-      delay: 6000,
-      disableOnInteraction: false
-  }}
+  //   autoplay={{
+  //     delay: 6000,
+  //     disableOnInteraction: false
+  // }}
     loop
     navigation={true}
     modules={[Pagination, Navigation]}

@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import About from '../src/Components/About/About'
 import Aos from 'aos'
 import Hero from '../src/Components/Hero/Hero'
@@ -19,6 +19,13 @@ const Home: NextPage = () => {
       <Projects />
     </main>
   )
+}
+
+export const getStaticProps = async () => {
+    return {
+      props: {
+      },
+    }
 }
 
 export default Home

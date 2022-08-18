@@ -4,6 +4,13 @@
   height: auto;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 3rem;
+  }
 }
 
 .projectAligns {
@@ -43,6 +50,7 @@
       margin: 0.5rem;
       font-size: 1.3rem;
       font-weight: 600;
+      font-family: 'Silkscreen', cursive;
     }
 
     a {
@@ -51,6 +59,7 @@
       border-radius: 5px;
       margin: 0.5rem;
       transition: all 0.5s;
+      font-family: 'Silkscreen', cursive;
     }
     a:hover {
       background-color: black;

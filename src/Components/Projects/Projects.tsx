@@ -91,8 +91,9 @@ import { redirect } from 'next/dist/server/api-utils';
 
 function Projects() {
   return (
-    <main className={style.project_container} >
-      <section id='Projetos' className={style.projectAligns}>
+    <main id='Projetos' className={style.project_container} >
+        <h1>Projetos</h1>
+      <section className={style.projectAligns}>
           {
             Object.keys(allProjects).map((project) => (
               <section key={project} className={style.card}>

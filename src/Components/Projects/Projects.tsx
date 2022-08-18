@@ -21,15 +21,16 @@ import Image from 'next/image';
 const allProjects: any = {
   drawingStationWeb: {
     name: 'DrawingStation',
-    tecnologias: ['React', 'Typescript', 'Redux'],
+    tecnologias: ['React', 'Typescript', 'Redux', 'FireBase'],
     images: [
       DrawingWeb1,
       DrawingWeb3,
       DrawingWeb2,
     ],
-    description: '',
+    description: `Minha Plataforma de ensino de desenho realista, a desenvolvi com o intuito de publicar minahs aulas e auxiliar os meus alunos diretamente dela.
+     Na plataforma é possivél os alunos atualizarem seu progresso conforme progridem no curso, além de poderem comentar e tirar duvidas nas diretamente nas aulas`,
     gitHub: 'https://github.com/brenooliveiranascimento/Drawing-Station-Web',
-    goProject:''
+    goProject:'https://drawing-station-web.vercel.app/'
   },
   reduxWallet: {
     name: 'ReduxWallet',
@@ -38,9 +39,10 @@ const allProjects: any = {
       ReduxWallet1,
       ReduxWallet2,
     ],
-    description: 'https://github.com/brenooliveiranascimento/Redux-wallet-Redux-thunk',
-    gitHub: '',
-    goProject:''
+    description: `Essa é uma aplicação de gerenciamento de despesas nela pude praticar o uso do Redux 
+    tanto de forma sincrona quanto de forma assincrona, além de praticar o uso do TypeScript, a aplicação consome e atualiza um banco do dados conforme o usuário adiciona ou edita os lançamentos.`,
+    gitHub: 'https://github.com/brenooliveiranascimento/Redux-wallet-Redux-thunk',
+    goProject:'https://redux-thunk-wallet-breno.vercel.app/'
   },
   drawingStationMobile: {
     name: 'DrawingStation Mobile',
@@ -52,20 +54,20 @@ const allProjects: any = {
     ],
     description: '',
     gitHub: 'https://github.com/brenooliveiranascimento/Drawing-Station-Android-Old',
-    goProject:''
+    goProject:'https://play.google.com/store/apps/details?id=com.drawingstation'
   },
-  // Board: {
-  //   name: 'Board',
-  //   tecnologias: ['React', 'NextJs', 'Api'],
-  //   images: [
-  //     Board1,
-  //     Board2,
-  //     Board3,
-  //   ],
-  //   description: '',
-  //   gitHub: '',
-  //   goProject:''
-  // },
+  Board: {
+    name: 'Board',
+    tecnologias: ['React', 'NextJs', 'Api'],
+    images: [
+      Board1,
+      Board2,
+      Board3,
+    ],
+    description: '',
+    gitHub: 'https://github.com/brenooliveiranascimento/Board',
+    goProject:'https://github.com/brenooliveiranascimento/Board'
+  },
 }
 
 const images = [
@@ -92,7 +94,7 @@ function Projects() {
               <section key={project} className={style.card}>
                 <ItemCard photos={allProjects[project].images} />
                 <h1>{allProjects[project].name}</h1>
-                <article>
+                <nav>
                 {
                   allProjects[project].tecnologias.map((tecnologia: string) => (
                     <span key={tecnologia}>
@@ -100,7 +102,26 @@ function Projects() {
                     </span>
                   ))
                 }
+                </nav>
+                <article className={style.description_content}>
+                  <p>
+                    {allProjects[project].description}
+                  </p>
                 </article>
+                <nav>
+                  <a
+                    href={allProjects[project].goProject}
+                    target="_blank"
+                  >
+                    Project
+                  </a>
+                  <a
+                    href={allProjects[project].gitHub}
+                    target="_blank"
+                  >
+                    gitHub
+                  </a>
+                </nav>
               </section>
             ))
           }
@@ -118,7 +139,7 @@ const ItemCard = ({photos}: any) => {
     <Swiper
     pagination={true}
     style={{
-      width: 800
+      width: 600
     }}
   //   autoplay={{
   //     delay: 6000,

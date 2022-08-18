@@ -7,10 +7,21 @@
 }
 
 .projectAligns {
-  width: 300px;
+  max-width: 1780px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   height: auto;
 }
 
+.card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
 
 .swiper {
   width: 100%;

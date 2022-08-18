@@ -16,6 +16,10 @@
   height: auto;
 }
 
+.mySwiper {
+  width: 700px;
+}
+
 .card {
   width: auto;
   display: flex;
@@ -96,10 +100,6 @@
   align-items: center;
 }
 
-.mySwiper {
-  width: 600px;
-}
-
 @media screen and (max-width: 701px) {
   .mySwiper {
     width: 400px;
@@ -142,5 +142,16 @@
     flex-wrap: wrap;
   }
 
+}
+
+@media screen and (max-width: 329px) {
+  .card {
+    width: 270px;
+    
+  }
+
+  .mySwiper {
+    margin-left: -0.8rem;
+  }
 }
 

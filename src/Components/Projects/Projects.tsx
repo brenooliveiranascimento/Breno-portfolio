@@ -59,14 +59,14 @@ const allProjects: any = {
   },
   Board: {
     name: 'Board',
-    tecnologias: ['React', 'NextJs', 'Api'],
+    tecnologias: ['React', 'NextJs', 'Api', 'FireBase'],
     images: [
       Board1,
       Board2,
       Board3,
     ],
     description: `Essa é uma aplicação de lista de tarefas com plano premium através da 
-    integração a api de pagamentos da PayPal, assim qeu se adquire o plano, algumas funções na plicação são 
+    integração a api de pagamentos da PayPal, assim qeu se adquire o plano algumas funções na plicação são 
     liberadas, como por exemplo editar as tarefas já existentes. O sistema de Login através do GitHub Feito com NextAuth 
     `,
     gitHub: 'https://github.com/brenooliveiranascimento/Board',
@@ -92,13 +92,15 @@ import { redirect } from 'next/dist/server/api-utils';
 function Projects() {
   return (
     <main className={style.project_container} >
-      <section className={style.projectAligns}>
+      <section id='Projetos' className={style.projectAligns}>
           {
             Object.keys(allProjects).map((project) => (
               <section key={project} className={style.card}>
                 <ItemCard photos={allProjects[project].images} />
                 <h1>{allProjects[project].name}</h1>
-                <nav>
+                <nav
+                 className={style.tecnologas}
+                >
                 {
                   allProjects[project].tecnologias.map((tecnologia: string) => (
                     <span key={tecnologia}>
@@ -112,7 +114,9 @@ function Projects() {
                     {allProjects[project].description}
                   </p>
                 </article>
-                <nav>
+                <nav
+                  className={style.links}
+                >
                   <a
                     href={allProjects[project].goProject}
                     target="_blank"
@@ -142,9 +146,6 @@ const ItemCard = ({photos}: any) => {
   return (
     <Swiper
     pagination={true}
-    style={{
-      width: 600
-    }}
   //   autoplay={{
   //     delay: 6000,
   //     disableOnInteraction: false

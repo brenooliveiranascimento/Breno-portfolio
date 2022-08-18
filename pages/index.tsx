@@ -21,11 +21,13 @@ const Home: NextPage = () => {
   )
 }
 
-export const getStaticProps = async () => {
-    return {
-      props: {
-      },
-    }
+export const getStaticProps: GetStaticProps = async ()=>{
+  return{
+    props:{
+      data: 'Breno'
+    },
+    revalidate: 60 * 120
+  }
 }
 
 export default Home

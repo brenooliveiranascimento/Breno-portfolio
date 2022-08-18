@@ -164,3 +164,12 @@
   }
 }
 
+@media screen and (max-width: 329px) {
+  .card {
+    width: 200px;
+  }
+  .mySwiper {
+    margin-left: -3.3rem;
+  }
+}
+

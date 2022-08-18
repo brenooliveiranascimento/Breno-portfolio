@@ -18,7 +18,7 @@ SwiperCore.use([Autoplay]);
 import style from './Projects.module.scss'
 import Image from 'next/image';
 
-const allProjects = {
+const allProjects: any = {
   drawingStationWeb: {
     name: 'DrawingStation',
     tecnologias: ['React', 'Typescript', 'Redux'],
@@ -89,9 +89,18 @@ function Projects() {
       <section className={style.projectAligns}>
           {
             Object.keys(allProjects).map((project) => (
-              <section className={style.card}>
+              <section key={project} className={style.card}>
                 <ItemCard photos={allProjects[project].images} />
                 <h1>{allProjects[project].name}</h1>
+                <article>
+                {
+                  allProjects[project].tecnologias.map((tecnologia: string) => (
+                    <span key={tecnologia}>
+                      {tecnologia}
+                    </span>
+                  ))
+                }
+                </article>
               </section>
             ))
           }
@@ -120,12 +129,11 @@ const ItemCard = ({photos}: any) => {
     modules={[Pagination, Navigation]}
     className={style.mySwiper}
   >
-      {photos.map((image, i) => (
+      {photos.map((image: string, index: number) => (
         <SwiperSlide
-         key={i} className="">
+         key={index} className="">
           <Image
             src={image}
-            key={i}
             alt="product"
             className="rounded-lg"
           />

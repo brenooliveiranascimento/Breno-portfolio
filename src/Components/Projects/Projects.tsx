@@ -46,13 +46,14 @@ const allProjects: any = {
   },
   drawingStationMobile: {
     name: 'DrawingStation Mobile',
-    tecnologias: ['React', 'JavaScript', 'Context Api', 'Firebase'],
+    tecnologias: ['ReactNative', 'JavaScript', 'Context Api', 'Firebase'],
     images: [
       DrawingApp2,
       DrawingApp3,
       DrawingApp1,
     ],
-    description: '',
+    description: `Aplicação Mobile da minha plataforma de ensino, Possui as mesmas funcionalidade da página web
+      porém com a vantagem de esta rodando de forma nativa nos dispositivos moveis dos usúarios.`,
     gitHub: 'https://github.com/brenooliveiranascimento/Drawing-Station-Android-Old',
     goProject:'https://play.google.com/store/apps/details?id=com.drawingstation'
   },
@@ -64,7 +65,10 @@ const allProjects: any = {
       Board2,
       Board3,
     ],
-    description: '',
+    description: `Essa é uma aplicação de lista de tarefas com plano premium através da 
+    integração a api de pagamentos da PayPal, assim qeu se adquire o plano, algumas funções na plicação são 
+    liberadas, como por exemplo editar as tarefas já existentes. O sistema de Login através do GitHub Feito com NextAuth 
+    `,
     gitHub: 'https://github.com/brenooliveiranascimento/Board',
     goProject:'https://board-anotacoes.herokuapp.com/'
   },

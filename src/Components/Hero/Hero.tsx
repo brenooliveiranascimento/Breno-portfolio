@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import style from './hero.module.scss'
 import Header from '../Header/Header';
 import FadeIn from 'react-fade-in'
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 function Hero() {
   return (
@@ -25,6 +26,7 @@ function Hero() {
                 speed={5}
               />
             </article>
+            <SocialMedia /> 
           </FadeIn>
         </section>
       </section>

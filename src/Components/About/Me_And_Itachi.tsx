@@ -15,7 +15,7 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
   const verifyWidth = () => setInterval(() =>setWidthvalue(window.innerWidth), 100)
 
   const widhtOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 260 : 240) : (showMeOrItachi === 'me' ? 420 : 400)
-  const heighthOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 300 : 290) : (showMeOrItachi === 'me' ? 520 : 500)
+  const heighthOfImages = widthvalue < 584 ? (showMeOrItachi === 'me' ? 320 : 290) : (showMeOrItachi === 'me' ? 520 : 500)
 
   useEffect(() => {
     verifyWidth();

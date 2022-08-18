@@ -5,6 +5,12 @@ import DrawingWeb2 from '../../images/Projects/DrawingStation/drawing2.png'
 import DrawingWeb3 from '../../images/Projects/DrawingStation/drawing3.png'
 import ReduxWallet1 from '../../images/Projects/ReduxWallet/wallet1.png'
 import ReduxWallet2 from '../../images/Projects/ReduxWallet/wallet2.png'
+import DrawingApp1 from '../../images/Projects/DrawingStationMobile/drawingstationMobile1.jpg'
+import DrawingApp2 from '../../images/Projects/DrawingStationMobile/drawingstationMobile2.jpg'
+import DrawingApp3 from '../../images/Projects/DrawingStationMobile/drawingstationMobile3.jpg'
+import Board1 from '../../images/Projects/Board/board1.png'
+import Board2 from '../../images/Projects/Board/board2.png'
+import Board3 from '../../images/Projects/Board/board3.png'
 
 import 'swiper/css';
 import SwiperCore, { Autoplay } from 'swiper';
@@ -31,6 +37,30 @@ const allProjects = {
     images: [
       ReduxWallet1,
       ReduxWallet2,
+    ],
+    description: '',
+    gitHub: '',
+    goProject:''
+  },
+  drawingStationMobile: {
+    name: 'DrawingStation Mobile',
+    tecnologias: ['React', 'JavaScript', 'Context Api', 'Firebase'],
+    images: [
+      DrawingApp2,
+      DrawingApp3,
+      DrawingApp1,
+    ],
+    description: '',
+    gitHub: '',
+    goProject:''
+  },
+  Board: {
+    name: 'Board',
+    tecnologias: ['React', 'NextJs', 'Api'],
+    images: [
+      Board1,
+      Board2,
+      Board3,
     ],
     description: '',
     gitHub: '',

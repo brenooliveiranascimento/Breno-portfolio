@@ -31,8 +31,8 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
   <article
       className={style.respansiveImages}
       style={{
-        width: widthvalue <= 359 ? 200 :  widhtOfImages,
-        height: widthvalue <= 359 ? 300 : heighthOfImages,
+        width: widthvalue <= 359 ? 230 :  widhtOfImages,
+        height: widthvalue <= 359 ? 320 : heighthOfImages,
       }}
     >
     <Image

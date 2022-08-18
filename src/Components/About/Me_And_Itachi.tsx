@@ -29,9 +29,10 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
       className={style.me_and_itachi}
     >
   <article
+      className={style.respansiveImages}
       style={{
-        width: widhtOfImages,
-        height: heighthOfImages,
+        width: widthvalue <= 359 ? 200 :  widhtOfImages,
+        height: widthvalue <= 359 ? 300 : heighthOfImages,
       }}
     >
     <Image
@@ -51,10 +52,17 @@ function MeAndItachi({showMeOrItachi, changeImage}: meAndItachiProps) {
 
     <article
       style={{
-        width: widhtOfImages,
-        height: heighthOfImages,
+        width: widthvalue <= 359 ? 200 :  widhtOfImages,
+        height: widthvalue <= 359 ? 240 : heighthOfImages,
+        position: 'absolute',
+        marginTop:'5rem',
+        marginRight:'5rem',
+        zIndex:0,
+        transition: 'all 0.1s',
+        backgroundColor:'black'
       }}
-    className={style.black_back}>
+    className={style.black_back}
+    >
       <Image
       onMouseOut={() => showMeOrItachi === 'itachi' && changeImage('me')}
       alt="Itachi"

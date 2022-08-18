@@ -161,7 +161,7 @@ const ItemCard = ({photos}: any) => {
          key={index} className="">
           <Image
             src={image}
-            alt="product"
+            alt={index.toString()}
             className="rounded-lg"
           />
         </SwiperSlide>

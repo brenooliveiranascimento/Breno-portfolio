@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
 function MeMessage() {

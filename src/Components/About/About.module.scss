@@ -65,9 +65,6 @@
 }
 
 .black_back {
-  width: 400px;
-  height: 500px;
-  background-color: black;
   position: absolute;
   z-index: 0;
   margin-top: 5rem;
@@ -114,9 +111,17 @@
     margin-left: 0rem;
     h1 {
       font-size: 24px;
+      margin-top: -3.4rem;
     }
     p {
       font-size: 20px;
     }
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .black_back {
+    width: 200px;
+    height: 300px;
   }
 }

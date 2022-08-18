@@ -13,12 +13,14 @@ function Hero() {
         <section className={style.centralize_content}>
           <FadeIn>
             <article className={style.text_container}>
-              <h2>
+              <h2
+                className={style.me_message}
+              >
                 Olá me chamo Breno e sou desenvolvedor
               </h2>
               <TypeAnimation
                 sequence={['FrontEnd Mobile.', 1300,]}
-                style={{ fontSize: '3em' }}
+                className={style.me_message}
                 wrapper="h1"
                 speed={5}
               />

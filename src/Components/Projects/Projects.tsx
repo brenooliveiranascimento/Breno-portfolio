@@ -66,7 +66,7 @@ const allProjects: any = {
     ],
     description: '',
     gitHub: 'https://github.com/brenooliveiranascimento/Board',
-    goProject:'https://github.com/brenooliveiranascimento/Board'
+    goProject:'https://board-anotacoes.herokuapp.com/'
   },
 }
 

@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import { useEffect } from 'react'
 import MyStacks from '../src/Components/MyStacks/MyStacks'
 import Projects from '../src/Components/Projects/Projects'
+import Footer from '../src/Components/Footer/Footer'
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <About />
       <MyStacks />
       <Projects />
+      <Footer />
     </main>
   )
 }

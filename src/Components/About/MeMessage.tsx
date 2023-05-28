@@ -21,7 +21,9 @@ function MeMessage() {
       <p>
       - Amante de animes séries e filmes
       </p>
-
+      <p>
+      - Desenhista
+      </p>
     </FadeIn>
   );
 };

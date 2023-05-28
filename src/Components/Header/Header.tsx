@@ -7,7 +7,7 @@ function Header() {
   const verifyY: any = () => setInterval(() => setScrollY(window.scrollY),100)
   useEffect(() => {
     verifyY()
-    return () => clearInterval()
+    return () => clearInterval(verifyY)
   }, [])
 
   return (

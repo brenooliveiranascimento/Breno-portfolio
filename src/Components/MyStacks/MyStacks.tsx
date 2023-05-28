@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { stackTypes } from '../../../types/stackstypes';
 import style from './Project.module.scss';
 import Stacks from './stacks';
-import ReactWhite from '../../images/reactWhite.png'
-import ReactBlack from '../../images/reactBlack.png'
-import Image from 'next/image';
 
 function MyStacks() {
   const [myStacks, setMyStacks] = useState<Array<stackTypes>>([
@@ -13,7 +10,13 @@ function MyStacks() {
     {name: 'Redux', photo: '', description: ''},
     {name: 'ReactJs', photo: '', description: ''},
     {name: 'Next', photo: '', description: ''},
-    {name: 'Node', photo: '', description: ''},
+    {name: 'NodeJs', photo: '', description: ''},
+    {name: 'React-Native', photo: '', description: ''},
+    {name: 'Sequelize', photo: '', description: ''},
+    {name: 'TypeOrm', photo: '', description: ''},
+    {name: 'MySql', photo: '', description: ''},
+    {name: 'Postgresql', photo: '', description: ''},
+    {name: 'Material Ui', photo: '', description: ''},
     {name: 'RTL', photo: '', description: ''},
     {name: 'Docker', photo: '', description: ''},
     {name: 'Jest', photo: '', description: ''},

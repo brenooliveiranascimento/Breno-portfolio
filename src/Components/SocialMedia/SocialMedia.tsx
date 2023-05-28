@@ -20,7 +20,7 @@ function SocialMedia() {
     <aside className={style.social_container}>
       <nav>
         <a
-          href='https://www.linkedin.com/in/breno-nascimento-0b3331229/'
+          href='https://www.linkedin.com/in/breno-nascimento-oliveira/'
           target='_blank'
         >
           <FiLinkedin

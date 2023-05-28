@@ -20,7 +20,7 @@ function Hero() {
                 Olá me chamo Breno e sou desenvolvedor
               </h2>
               <TypeAnimation
-                sequence={['FrontEnd e Mobile.', 1300,]}
+                sequence={['FullStack e Mobile.', 1300,]}
                 className={style.me_message}
                 wrapper="h1"
                 speed={5}
